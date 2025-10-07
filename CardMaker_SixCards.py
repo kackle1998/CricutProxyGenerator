@@ -19,22 +19,22 @@ def resource_path(relative_path: str) -> str:
 BACKGROUND_PATH = resource_path(BACKGROUND_FILENAME)
 # ============================================
 
-portraitX, portraitY = 744, 1040
-landscapeX, landscapeY = 1040, 744
+portraitX, portraitY = 763, 1058
+landscapeX, landscapeY = 1058, 763
 
 # Grid slots (6 max per page)
 slots = [
-    (175, 560,  175+landscapeX, 560+landscapeY),       # LeftTop
-    (175, 1421,  175+landscapeX, 1421+landscapeY),     # LeftMid
-    (263, 2292,  263+landscapeX, 2292+landscapeY),     # LeftBot
+    (165, 552,  165+landscapeX, 552+landscapeY),       # LeftTop
+    (165, 1412, 165+landscapeX, 1412+landscapeY),     # LeftMid
+    (268, 2274,  268+landscapeX, 2274+landscapeY),     # LeftBot
     
-    (1242, 261,  1242+landscapeX, 261+landscapeY),     # RightTop
-    (1335, 1132,  1335+landscapeX, 1132+landscapeY),   # RightMid
-    (1335, 1993,  1335+landscapeX, 1993+landscapeY)    # RightBot
+    (1224, 262,  1224+landscapeX, 262+landscapeY),     # RightTop
+    (1327, 1122,  1327+landscapeX, 1122+landscapeY),   # RightMid
+    (1327, 1983,  1327+landscapeX, 1983+landscapeY)    # RightBot
 ]
 
-# 1 mm bleed at 300 DPI ≈ 12 px
-BLEED_PX = 12
+# 0.5 mm bleed at 300 DPI ≈ 6 px
+BLEED_PX = 6
 
 
 # --- Helper: add bleed by extending outermost pixels ---
